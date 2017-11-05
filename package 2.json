@@ -1,20 +1,19 @@
 {
-  "name": "neo4j-alexa-node",
-  "version": "1.0.0",
-  "description": "fork of https://github.com/alexa-js/alexa-app.git  v 4.2.1",
+  "name": "alexa-app",
+  "version": "4.2.1",
+  "description": "A module to simplify creation of Alexa (Amazon Echo) apps (Skills) using Node.js",
   "main": "index.js",
-
+  "types": "types",
+  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com)",
   "engines": {
     "node": ">=1"
   },
-
   "keywords": [
     "amazon",
     "echo",
     "alexa",
     "skills"
   ],
-
   "scripts": {
     "lint": "eslint index.js;",
     "coverage": "istanbul cover _mocha -- -R spec",
@@ -25,16 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/graphadvantage/neo4j-alexa-node.git"
+    "url": "https://github.com/alexa-js/alexa-app.git"
   },
-  "author": "Michael Moore",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/graphadvantage/neo4j-alexa-node/issues"
+    "url": "https://github.com/alexa-js/alexa-app/issues"
   },
-
-  "homepage": "https://github.com/graphadvantage/neo4j-alexa-node#readme",
-
+  "license": "MIT",
   "dependencies": {
     "@types/chai-as-promised": "^7.1.0",
     "alexa-utterances": "^0.2.0",
@@ -61,7 +56,6 @@
     "express": "^4.14.0",
     "istanbul": "^0.4.3",
     "mocha": "^2.3.4",
-    "seraph": "^0.15.2",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
     "supertest": "^2.0.1"
