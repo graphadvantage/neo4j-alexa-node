@@ -1,20 +1,28 @@
 {
   "name": "neo4j-alexa-node",
   "version": "1.0.0",
-  "description": "fork of https://github.com/alexa-js/alexa-app.git  v 4.2.1",
+  "description": "fork of alexa-app v 4.2.1",
   "main": "index.js",
-
+  "types": "types",
   "engines": {
     "node": ">=1"
   },
-
   "keywords": [
     "amazon",
     "echo",
     "alexa",
     "skills"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphadvantage/neo4j-alexa-node.git"
+  },
+  "author": "Michael Moore <github@graphadvantage.com>",
 
+  "bugs": {
+    "url": "https://github.com/graphadvantage/neo4j-alexa-node/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "lint": "eslint index.js;",
     "coverage": "istanbul cover _mocha -- -R spec",
@@ -23,18 +31,6 @@
     "test-with-coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*.js --compilers js:babel-core/register",
     "danger": "./node_modules/.bin/danger"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/graphadvantage/neo4j-alexa-node.git"
-  },
-  "author": "Michael Moore",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/graphadvantage/neo4j-alexa-node/issues"
-  },
-
-  "homepage": "https://github.com/graphadvantage/neo4j-alexa-node#readme",
-
   "dependencies": {
     "@types/chai-as-promised": "^7.1.0",
     "alexa-utterances": "^0.2.0",
