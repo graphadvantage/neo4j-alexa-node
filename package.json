@@ -4,6 +4,7 @@
   "description": "fork of alexa-app v 4.2.1",
   "main": "index.js",
   "types": "types",
+  "author": "Michael Moore <github@graphadvantage.com>",
   "engines": {
     "node": ">=1"
   },
@@ -17,8 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/graphadvantage/neo4j-alexa-node.git"
   },
-  "author": "Michael Moore <github@graphadvantage.com>",
-
   "bugs": {
     "url": "https://github.com/graphadvantage/neo4j-alexa-node/issues"
   },
